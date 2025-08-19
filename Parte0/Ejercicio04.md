@@ -17,12 +17,12 @@ sequenceDiagram
 
     Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate Servidor
-    Servidor->>Navegador: Code 304 Not Modified - Archivo CSS
+    Servidor-->>Navegador: Code 304 Not Modified - Archivo CSS
     deactivate Servidor
 
     Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/main.js
     activate Servidor
-    Servidor->>Navegador: Code 304 Not Modified - Archivo JS
+    Servidor-->>Navegador: Code 304 Not Modified - Archivo JS
     deactivate Servidor
 
     Navegador->>Servidor: GET https://studies.cs.helsinki.fi/exampleapp/data.json

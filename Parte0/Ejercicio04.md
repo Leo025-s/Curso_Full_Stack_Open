@@ -1,3 +1,6 @@
+markdown
+# Aplicación Web Tradicional - Crear Nueva Nota
+
 ```mermaid
 sequenceDiagram
     participant Usuario

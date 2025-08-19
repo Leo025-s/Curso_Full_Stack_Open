@@ -10,4 +10,6 @@ sequenceDiagram
   Usuario->>Navegador: Escribe texto y hace clic en "Save"
   Navegador->>Servidor: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
   activate Servidor
-  Servidor-->Navegador: Code 200 OK - JSON con confirmación
+  Servidor-->>Navegador: Code 201 Created - JSON con craeado y confirmación
+
+  

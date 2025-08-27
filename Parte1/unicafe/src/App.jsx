@@ -62,9 +62,8 @@ const Statistics = ({ good, neutral, bad }) => {
           margin: '15px 0',
           borderTop: '5px solid #e9ecef',
           paddingTop: '5px'
-        }}
+        }}>
 
-      >
         <Statistic name='Total: ' value={total} />
         <Statistic name='Promedio: ' value={avarage.toFixed(2)} />
         <Statistic name='Positivo: ' value={positive.toFixed(1) + "%"} />
@@ -87,6 +86,7 @@ const App = () => {
     setGood(good + 1)
   }
 
+  // Función Neutral
   const handleNeutral = () => {
     setNeutral(neutral + 1)
   }
